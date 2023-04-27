@@ -1,0 +1,17 @@
+{
+    "name": "My watchlist",
+    "short_name": "My watchlist",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      
+      {
+        "src": "/image/logo.png",
+        "type": "image/png","sizes": "128x128"
+      }
+      
+    ]
+  }
