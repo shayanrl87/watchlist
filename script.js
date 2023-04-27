@@ -13,14 +13,14 @@ searchBtn.addEventListener("click",()=>{
 
     loaderWrapper.classList.remove("loader-wrapper-hidden")
 
-     fetch(`http://www.omdbapi.com/?apikey=8d8258de&s=${inputSearch.value}`)
+     fetch(`https://www.omdbapi.com/?apikey=8d8258de&s=${inputSearch.value}`)
         .then(res => {
             
             return res.json()})
         .then(data => {
              data.Search.forEach((movie)=>{
                
-                fetch(`http://www.omdbapi.com/?apikey=8d8258de&i=${movie.imdbID}&plot=short`)
+                fetch(`https://www.omdbapi.com/?apikey=8d8258de&i=${movie.imdbID}&plot=short`)
                     .then(res => res.json())
                     .then(data=> {
                         
